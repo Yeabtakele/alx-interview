@@ -9,12 +9,12 @@ def get_matrix_from_user():
         for i in range(num_rows):
             row = input(f"Enter row {i+1} (space-separated values): ")
             row_values = [int(x) for x in row.split()]
-            matrix.append(row_values)  # Append as a list, not a tuple
+            matrix.append(row_values)  
 
         return matrix
     except EOFError:
         print("No input provided. Using default values.")
-        # Provide a default matrix or handle the situation as needed
+        
         return [
             [1, 2, 3],
             [4, 5, 6],
